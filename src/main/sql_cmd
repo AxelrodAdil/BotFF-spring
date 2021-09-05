@@ -1,0 +1,11 @@
+CREATE TABLE `bot`.`currency` (
+                                   `id` INT NOT NULL,
+                                   `date` VARCHAR(45) NULL,
+                                   `price` VARCHAR(45) NULL,
+                                   PRIMARY KEY (`id`));
+
+
+select * from currency_sequence
+
+drop table currency_sequence
+drop table currency
