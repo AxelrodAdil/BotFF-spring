@@ -1,10 +1,12 @@
 CREATE TABLE `bot`.`currency` (
-                                   `id` INT NOT NULL,
-                                   `date` VARCHAR(45) NULL,
-                                   `price` VARCHAR(45) NULL,
-                                   PRIMARY KEY (`id`));
+                                  `id` INT NOT NULL,
+                                  `date` VARCHAR(45) NULL,
+                                  `price_usd` VARCHAR(45) NULL,
+                                  `price_eur` VARCHAR(45) NULL,
+                                  `price_rub` VARCHAR(45) NULL,
+                                  PRIMARY KEY (`id`));
 
-
+select * from currency
 select * from currency_sequence
 
 drop table currency_sequence
